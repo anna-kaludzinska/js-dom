@@ -15,4 +15,5 @@ var allLinks = document.querySelectorAll("a");
 for (var i = 0; i<allLinks.length; i++) {
 	var br = document.createElement("br");
 	allLinks[i].parentNode.insertBefore(br, allLinks[i].nextSibling);
+	allLinks[i].removeAttribute("class");
 }
